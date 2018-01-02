@@ -1,4 +1,4 @@
-FROM opensuse:tumbleweed
+FROM opensuse:latest
 
 MAINTAINER rishi<rishiloyola98245@gmail.com>
 
@@ -6,7 +6,7 @@ MAINTAINER rishi<rishiloyola98245@gmail.com>
 EXPOSE 80 443 3000 35729 8080
 
 # install nodejs
-RUN zypper -n install nodejs8
+RUN zypper -n install nodejs6
 
 # install npm
 RUN zypper -n install npm
